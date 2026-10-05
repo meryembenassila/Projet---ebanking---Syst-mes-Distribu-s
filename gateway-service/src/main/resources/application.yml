@@ -1,16 +1,16 @@
-spring:
-  cloud:
-    gateway:
-      server:
-        webflux:
-          routes:
-            - id: customer-service
-              uri: http://localhost:8085
-              predicates:
-                - Path=/customers/**
-
-            - id: BankAccount-service
-              uri: http://localhost:8086
-              predicates:
-                - Path=/BankAccounts/**
-
+#spring:
+#  cloud:
+#    gateway:
+#      server:
+#        webflux:
+#          routes:
+#            - id: customer-service
+#              uri: http://localhost:8085
+#              predicates:
+#                - Path=/customers/**
+#
+#            - id: BankAccount-service
+#              uri: http://localhost:8086
+#              predicates:
+#                - Path=/BankAccounts/**
+#
